@@ -1,11 +1,11 @@
-/** function initialize() {
+function initialize() {
   var mapOptions = {
     zoom: 16,
     center: new google.maps.LatLng(8.148,77.568455),
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
 
-  var map = new google.maps.Map(document.getElementById('map-canvas'),
+  var map = new google.maps.Map($('#map-canvas'),
       mapOptions);
 }
 
@@ -18,7 +18,7 @@ function loadScript() {
   document.body.appendChild(script);
 
   
-} **/
+} 
 
 function animate(){
 $('.scroller').click(function(){
@@ -29,5 +29,5 @@ return false;
 });
 }
  
-/** $(window).load(loadScript); **/
+$("#openmaps").unbind().click(loadScript);
 $(window).load(animate);

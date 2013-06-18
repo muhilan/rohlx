@@ -6,7 +6,7 @@
     <!-- Bootstrap -->
     <link href="../../css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="../../css/rohlxcustom.css" rel="stylesheet" media="screen">
-    <link href="../../css/bootstrap-responsive.css" rel="stylesheet" media="screen"> 
+   <link href="../../css/bootstrap-responsive.css" rel="stylesheet" media="screen">
   </head>
   <body>
     
@@ -14,9 +14,9 @@
       <div class="navbar-inner">
         
         <div class="container banner-align">
-    		<!--<div class="banner" > -->
-                    <a  href="index.html" class="banner scroller" data-section="#intro">Rohlx Technologies</a>
-                <!--</div>  -->  
+    		<div id="rohlxbanner" >
+                    <a  href="index.html" class="banner scroller"  data-section="#intro">Rohlx Technologies</a>
+		</div>
 		  	<div class="nav-collapse collapse">
                 <ul class="nav pull-right">
                   	<li><a href="#" class="scroller" data-section="#intro">About Us</a></li>
@@ -35,7 +35,7 @@
     <div id="intro" class="container-fluid">
                     
 		<div class="container">	
-			<div class="row span6 center">
+			<div class="row span6 center" id="alignImage">
                                 <img src="../../img/rohlx.jpg" />
 				<h1>Making a difference !!!! </h1>
 				<p class="text">Our Mission is to maximize the business success of our customers by providing quality software services, installation and maintenance support and help our customers thus, achieve their goals.
@@ -162,32 +162,34 @@
       
       <!-- #Contact US -->   	
 	<div id="contact" class="container-fluid">
-	<div class="container dark">
+	<div class="container dark" id="contactus">
 		<h1>Come on get hold of us here ...</h1>	
 	
 		
 		
 				
-				<!--<div id="map-canvas"></div>-->
-				<address>
+				<div id="addressinfo">
+				<address><a id="openmaps" href="#">
 				  <strong>Rohlx Technologies</strong><br>
 				  6/27 - A, West Bazaar, <br>
 				  Anjugramam - 629401, <br>
-                                  Kanyakumari District, TamilNadu  <br>
-				  <abbr title="Phone">P:</abbr> 04652 - 266006
+                                  Kanyakumari District, TamilNadu  <br></a>
+				  <abbr title="Phone">Ph:</abbr> 04652 - 266006
 				</address>
 				<p>Store Hours: 9:00 AM  to 9:00 PM. </p>
                                 <p>Closed on Sunday</p>
-                                
+                                <address>
+				  <strong>Email </strong><br>
+				  <a href="mailto:#">info@rohlx.com</a></br>
+				</address>
                                 <address>
                                     <strong>Like us here</strong>
-				  <a href="https://www.facebook.com/Rohlxtechologies?fref=ts"><img src="../../img/facebook.png" /></a>
+				  <a href="https://www.facebook.com/Rohlxtechologies?fref=ts"><img src="../../img/facebook.png" /></a><br>
 				</address>
-				<address>
-				  <strong>Email </strong><br>
-				  <a href="mailto:#">info@rohlx.com</a>
-				</address>		
-			
+				</div>
+	
+				<div id="map-canvas">test data</div>
+				
 	</div>
         </div>   <!-- End Contact US -->  
 	
@@ -202,6 +204,7 @@
      <script src="../../js/jquery.appear.js"></script>
    
     <script src="../../js/rohlxcustom.js"></script>
-    <script src="../../js/bootstrap.min.js"></script>         
+    <script src="../../js/bootstrap.min.js"></script>
+    
   </body>
 </html>
