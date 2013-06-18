@@ -115,14 +115,38 @@ html {
     color: #A79D99;
 }
 
+@media (min-width: 321px)  and  (max-width: 480px){
+#map-canvas 
+{
+    margin: 0 40px 40px 0px;
+    padding: 45%;
+    height: 100%;
+    width: 12%;
+    float: left;
+}
+}
+
+@media (min-width: 481px) {
 #map-canvas {
-        margin: 0 40px 40px 40px;
+        margin: 0 10% 40px 40px;
         padding: 150px;
         height: 100%;
         width: 12%;
-        float: right;
+        float: left;
       }
-      
+}
+
+@media (max-width: 320px) {
+#map-canvas {
+        margin: 0 40px 40px -5px;
+        padding: 96px;
+        height: 100%;
+        width: 12%;
+        float: left;
+      }
+}
+
+
 div#contactus > address {
         display: inline;
 }
@@ -219,6 +243,7 @@ h1 {
 
 #contact{
         background: none repeat scroll 0 0 rgba(136, 136, 136, 0.9);
+        height: 700px;
 }
 .navbar-fixed-top {
     border-top: 4px solid #1f3ec3;
